@@ -21,7 +21,7 @@ client.on('messageCreate',async message=>{
         .substring(PREFIX.length)
         .split(/\s+/);
         if(residue.length==0){
-            return message.channel.send(`Please provide an ID`);
+            return message.channel.send(`Please provide an ID u dickhead!!!`);
         }
         message.reply(`${residue[0]} is the target user`);
         console.log(`${residue[0]}`);
