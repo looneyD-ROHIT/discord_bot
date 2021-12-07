@@ -3,7 +3,9 @@ import dotenv from 'dotenv';
 import request from 'request';
 // import * as fs from 'fs';
 // import { validateURL } from 'ytdl-core';
-import * as accumulated  from "./accumulator.cjs";
+
+// ---imp
+// import * as accumulated  from "./accumulator.cjs";
 
 dotenv.config();
 const client = new Discord.Client({intents: [
@@ -33,7 +35,9 @@ client.once('ready',async ()=>{
     // fs.writeFileSync('./attributes.txt',attributes);
 
     // fetching commands
-    attributes.commands = accumulated['default'];
+    // ---imp
+    // attributes.commands = accumulated['default'];
+
     // await updateCMD();
 })
 
@@ -206,8 +210,13 @@ client.on('messageCreate',async message=>{
                 );  
                 break;
             case 'play':
-                console.log(attributes.commands['play']);
-                attributes.commands['play'].run(message,residue);
+
+
+                // ---imp
+                // console.log(attributes.commands['play']);
+                // attributes.commands['play'].run(message,residue);
+
+
                 // attributes.commands['play'].run(message,residue);
                 // var userId = message.author.id;
                 // var memberInsideGuild = await serverManager.fetch(userId);
