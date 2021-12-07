@@ -2,7 +2,7 @@
   "name": "discord",
   "version": "1.0.0",
   "main": "test_bot.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./test_bot.js",
@@ -12,8 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/voice": "^0.7.5",
     "discord.js": "^13.3.1",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "request": "^2.88.2"
   },
   "description": ""
 }
